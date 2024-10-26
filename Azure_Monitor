@@ -1,0 +1,66 @@
+1. Monitor Insights
+    1.1 Health of the system which is running
+    1.2 It also helps us understanding of the application usage
+    1.3 Performance Testing
+
+Libraries for Azure Monitoring of flask application:
+
+1. Opencensus-ext-azure
+2. Opencensus-ext-flask
+
+Monitoring Tools:
+
+1. Azure Application Insights---Application based
+2. Azure Monitor------Infrastructure based
+3. Azure Log Analytics
+4. Azure Network Watcher
+5. Azure security Center
+6. Azure Service Health
+7. Azure Automation
+8. Azure Cost Management
+9. Azure Senital
+
+Azure Exporter:
+
+from opencensus.ext.azure.trace_exporter import AzureExporter
+from opencensus.ext.flask.flask_middleware import FlaskMiddleware
+from opencensus.trace.samplers import ProbabilitySampler
+
+Azure Exporter:
+
+1. acts as bridge for telemetry data (traces) back to the azure application
+2. opencensus
+
+Need: Instrumentation key (which is similar to connection string of our storage)
+
+Flask Middleware:
+
+1.Azure----python code (Flask)
+2.It does the process of intercepting HTTP request in flask and sents it back to the azure exporter
+
+Probability sampler:
+
+It acts as catalyst for sampling rate of traces.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
